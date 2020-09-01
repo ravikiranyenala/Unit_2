@@ -2,6 +2,8 @@
 
 const myText = document.querySelector("h1");
 myText.textContent="Hello world....!"
+var carName = "Ford";
+document.getElementById("car").innerHTML = carName;	
 
 let bike = "sports";
 /*document.querySelector("button").onclick=function(){
