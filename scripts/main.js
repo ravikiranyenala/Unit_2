@@ -3,7 +3,11 @@
 const myText = document.querySelector("h1");
 myText.textContent="Hello world....!"
 var carName = "Ford";
-document.getElementById("car").innerHTML = carName;	
+var num = 1234;
+var price = 800000;
+var array1 = {name:"ravi",car:"ford",like:"riding"};
+document.getElementById("car").innerHTML = carName+" number"+num+" price : "+price;
+document.getElementById("para2").innerHTML = array1['name']+" likes "+array1['like'];
 
 let bike = "sports";
 /*document.querySelector("button").onclick=function(){
