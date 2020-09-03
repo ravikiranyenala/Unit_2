@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.PI</h2>
+
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+<p id="demo"></p>
+
+<br><br>
+
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
+
+<p id = "float_round"></p>
+<p> Pie round : </p>
+<p id = "pi_round"></p>
+
+<p> 2 power of 10 value : </p>
+<p id = "power_"></p>
+
+<p> Square root of 1024 value : </p>
+<p id = "square_root"></p>
+
+<p> Absolute value of -249  : </p>
+<p id = "abs_val"></p>
+
+<p> Nearest(up) value of 260.249 is  : </p>
+<p id = "ceil_val"></p>
+
+<p> Nearest(down) value of 260.249 is  : </p>
+<p id = "floor_val"></p>
+
+<p id = "remaining"></p>
+
+<script>
+document.getElementById("demo").innerHTML = Math.PI;
+document.getElementById("pi_round").innerHTML = Math.round(Math.PI);
+document.getElementById("float_round").innerHTML = Math.round(249.260);
+document.getElementById("power_").innerHTML = Math.pow(2,10);
+document.getElementById("square_root").innerHTML = Math.sqrt(1024);
+document.getElementById("abs_val").innerHTML = Math.abs(-249);
+document.getElementById("ceil_val").innerHTML = Math.ceil(260.249);
+document.getElementById("floor_val").innerHTML = Math.floor(260.249);
+document.getElementById("remaining").innerHTML = "<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+
+</script>
+
+</body>
+</html>
