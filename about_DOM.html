@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:skyblue">
+
+<h2>About Document Object Model </h2>
+<p>
+	When a web page is loaded, the browser creates a Document Object Model of the page. 
+	<br>
+	With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+	<br>
+    JavaScript can change all the HTML elements in the page<br>
+    JavaScript can change all the HTML attributes in the page<br>
+    JavaScript can change all the CSS styles in the page<br>
+    JavaScript can remove existing HTML elements and attributes<br>
+    JavaScript can add new HTML elements and attributes<br>
+    JavaScript can react to all existing HTML events in the page<br>
+    JavaScript can create new HTML events in the page<br><br>
+
+    The DOM is a W3C (World Wide Web Consortium) standard.<br>
+
+	The DOM defines a standard for accessing documents:
+
+	"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."<br><br>
+
+	The W3C DOM standard is separated into 3 different parts:<br>
+
+    Core DOM - standard model for all document types
+    XML DOM - standard model for XML documents
+    HTML DOM - standard model for HTML documents<br><br>
+
+    The HTML DOM is a standard object model and programming interface for HTML. It defines:<br>
+
+    The HTML elements as objects<br>
+    The properties of all HTML elements<br>
+    The methods to access all HTML elements<br>
+    The events for all HTML elements<br>
+
+	In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.<br><br>
+
+
+
+	The HTML DOM can be accessed with JavaScript (and with other programming languages).<br>
+
+	In the DOM, all HTML elements are defined as objects.<br>
+
+	The programming interface is the properties and methods of each object.<br>
+
+	A property is a value that you can get or set (like changing the content of an HTML element).<br>
+
+	A method is an action you can do (like add or deleting an HTML element).<br><br>
+
+
+	In the example above, getElementById is a method, while innerHTML is a property.
+	<br><br><br>
+	document.getElementById(id) 	Find an element by element id
+	document.getElementsByTagName(name) 	Find elements by tag name
+	document.getElementsByClassName(name) 	Find elements by class name
+	<br><br><br>
+
+
+
+	
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
