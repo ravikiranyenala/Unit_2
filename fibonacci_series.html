@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgreen">
+
+<h2>Fibonacci series : </h2>
+
+<p>
+<input type="number" name = "input_num" id = "input_num" value = "">
+	
+
+<button onclick="find_fibonacci()">Find Fibonacci </button>
+</p>
+<p id = "result_"></p>
+<script> function find_fibonacci(){
+ 	var check_val = document.getElementById("input_num").value;
+ 	var check_val = check_val-1;
+ 	var fib = [1,2];
+ 	for (i=2; i<=check_val;i++){
+ 		fib[i] = fib[i-2]+fib[i-1];
+ 		console.log(fib);
+ 	document.getElementById("result_").innerHTML = fib;
+ 	}
+
+ } </script>
+
+</body>
+</html>
+
+
+ 
