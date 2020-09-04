@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo"></p>
+
+<p id="demo_1"></p>
+
+<h2>JavaScript Strings</h2>
+
+<p>The escape sequence \" inserts a double quote in a string.</p>
+
+<p id="demo_2"></p>
+
+<h2>JavaScript Strings</h2>
+
+<p>The escape sequence \\ inserts a backslash in a string.</p>
+
+<p id="demo_3"></p>
+
+<h2>Six other escape sequences are valid in JavaScript:</h2>
+<p>
+	'\b' 	Backspace<br>
+	'\f' 	Form Feed<br>
+	'\n' 	New Line<br>
+	'\r' 	Carriage Return<br>
+	'\t' 	Horizontal Tabulator<br>
+	'\v' 	Vertical Tabulator<br><br>
+</p>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo_4"></p>
+
+
+<script>
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo_1").innerHTML = "Length of A-Z : "+ txt.length;
+
+var x = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo_2").innerHTML = x; 
+
+var y = "The character \\ is called backslash.";
+document.getElementById("demo_3").innerHTML = x; 
+
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7);
+document.getElementById("demo_4").innerHTML = res;
+
+</script>
+
+</body>
+</html>
+
+
