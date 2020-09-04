@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgreen">
+
+<h2>About HTML Events </h2>
+<p>
+	HTML events are "things" that happen to HTML elements.
+
+	When JavaScript is used in HTML pages, JavaScript can "react" on these events.<br> <br>
+
+	An HTML event can be something the browser does, or something a user does.
+
+	Here are some examples of HTML events:
+
+    An HTML web page has finished loading
+    An HTML input field was changed
+    An HTML button was clicked
+
+	Often, when events happen, you may want to do something.
+
+	JavaScript lets you execute code when events are detected.
+
+	HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+	With single quotes:<br>
+
+	<element event='some JavaScript'>
+
+	<element event="some JavaScript">
+	<br><br>
+
+
+
+
+
+</p>
+	
+<p id = "txtLen"></p>
+<button onclick="document.getElementById('demo').innerHTML=Date()">Get Today's date</button>
+
+<button onclick="this.innerHTML=Date()">click to get today's date</button>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Today's date is:";
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("txtLen").innerHTML = "A-Z length : "+ txt.length;
+</script>
+
+</body>
+</html>
