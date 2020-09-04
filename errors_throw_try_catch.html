@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgreen">
+
+<h2>JavaScript Errors - Throw and Try to Catch : </h2>
+
+<p>
+	The try statement lets you test a block of code for errors.<br>
+
+	The catch statement lets you handle the error.<br>
+
+	The throw statement lets you create custom errors.<br>
+
+	The finally statement lets you execute code, after try and catch, regardless of the result.<br><br>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>This example demonstrates how to use <b>catch</b> to diplay an error.</p>
+
+<p id="demo"></p>
+
+
+</p>
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo_1" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+
+
+<script>  try {
+  //alert("Welcome guest!");
+  addalert("welcome msg");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo_1").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+}
+}
+</script>
+
+</body>
+</html>
+
+
+ 
