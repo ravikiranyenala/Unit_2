@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgreen">
+
+<h2>Finding the number in which number's between the number is: </h2>
+
+<p>
+<input type="number" name = "input_num" id = "input_num" value = "">
+	
+
+<button onclick="find_btwn()">Find between</button>
+</p>
+<p id = "result_"></p>
+<script> function find_btwn(){
+ 	var check_val = document.getElementById("input_num").value;
+ 	switch (true){
+ 		case(check_val>100):
+ 			document.getElementById("result_").innerHTML = " Entered value is more than 100";
+ 			break;
+ 		case(check_val>=50):
+ 			document.getElementById("result_").innerHTML = " Entered value is between 50-100";
+ 			break;
+ 		case(check_val<50):
+ 			document.getElementById("result_").innerHTML = " Entered value is between 0-49";
+ 			break;
+ 		default:
+ 			document.getElementById("result_").innerHTML = " Entered value is not matching with 0-100 values ";
+ 			break;
+ 	}
+
+ } </script>
+
+</body>
+</html>
+
+
+ 
