@@ -1,0 +1,167 @@
+<!--#################-------------------double click and toggled function usage----------------
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    //$( this ).toggleClass("divClass1");
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:yellow;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:grey;
+    border:solid 1px;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">JournalDev</div>
+</body>
+</html>
+
+-->
+
+
+<!---########-----------------------------fadeIn function used for hiding the text-------------------->
+<!--
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            fadeIn() Method in jQuery 
+        </title> 
+        
+        <style> 
+            #Outer { 
+                border: 1px solid black; 
+                padding-top: 40px; 
+                height: 140px; 
+                background: green; 
+                display: none; 
+            } 
+        </style> 
+        
+        <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+        </script> 
+    </head> 
+    
+    <body style = "text-align:center;"> 
+        
+        <div id= "Outer"> 
+            <h1 style = "color:white;" > 
+                GeeksForGeeks 
+            </h1> 
+        </div><br> 
+        
+        <button id = "btn"> 
+            Fade In 
+        </button> 
+        
+       
+        <script> 
+            $(document).ready(function() { 
+                $("#btn").click(function() { 
+                    $("#Outer").fadeIn(1000); 
+                }); 
+            }); 
+        </script> 
+    </body> 
+</html> 
+-->
+
+
+<!--################-----------------------using toggling function-----------------
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+    <script> 
+        $(document).ready(function() { 
+            $("button").click(function() { 
+                $("#gfg").toggle(); 
+            }); 
+        }); 
+    </script> 
+    <style> 
+        #gfg { 
+            color: green; 
+            border: 5px solid black; 
+            width: 200px; 
+            text-align: center; 
+        } 
+    </style> 
+    </style> 
+</head> 
+
+<body> 
+
+    <div id="gfg">GeeksforGeeks</div> 
+
+    <button>Click to hide() and show() the above div</button> 
+
+</body> 
+
+</html> 
+-->
+
+
+
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title> 
+        jQuery | fadeOut() Method 
+    </title> 
+
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+</head> 
+
+<body style = "text-align:center;"> 
+
+    <h1 style = "color:green;" > 
+        GeeksForGeeks 
+    </h1> 
+    
+    <h2>jQuery | fadeOut() Method</h2> 
+
+    <button class="btn1">Fade out</button> 
+
+    <button class="btn2">Fade in</button> 
+
+    <script> 
+        $(document).ready(function(){ 
+            $(".btn1").click(function(){ 
+                $("h2").fadeOut(1000); 
+            }); 
+            
+            $(".btn2").click(function(){ 
+                $("h2").fadeIn(1000); 
+            }); 
+        }); 
+    </script> 
+</body> 
+
+</html> 
